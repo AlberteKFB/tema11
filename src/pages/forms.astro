@@ -7,67 +7,18 @@ import thumbsup from "../assets/images/thumbsup.png";
 ---
 
 <MainLayout title="Titel">
-  <!-- <article>
-    <h1>Index overskrift</h1>
-    <Button>Klik!</Button>
-    <p>
-      Link til <Link href="https://www.kea.dk" target="_blank"
-        >En anden side</Link
-      >
-    </p>
-    <Image src={thumbsup} alt="" />
-  </article>
-  <h1>Hvor meget Digtalt skrald har du smidt ud?</h1>
-  <form class="[&>div]:py-4 [&>div]:px-2">
-    <span>Omregner:</span>
-    <div class="flex items-center gap-2">
-      <label for="type" class="block">Typeskrald: </label>
-      <input type="text" id="navn" placeholder="Emails" />
-      <span>=</span>
-      <label for="GB" class="block">GB: </label>
-      <input type="text" id="gb" placeholder="1" />
-    </div>
-    <div>
-      <span>Dine oplysninger:</span>
-      <label for="navn" class="block">Navn: </label>
-      <input type="text" id="navn" placeholder="Alberte" />
-      <input type="text" id="navn" placeholder="Hansen" />
-    </div>
-    <div>
-      <label for="adresse" class="block">Adresse: </label>
-      <input type="text" id="adresse" placeholder="Vanløse torv" />
-    </div>
-    <div>
-      <label for="mail" class="block">E-mail: </label>
-      <input type="email" id="mail" placeholder="Alberte@gmail.com" />
-    </div>
-    <div>
-      <label for="postnr" class="block">Postnummer & by: </label>
-      <input type="text" id="postnr" placeholder="0900" />
-      <input type="text" id="postnr" disabled placeholder="Vanløse" />
-    </div>
-    <div>
-      <label for="tlf" class="block">Telefon: </label>
-      <input type="tel" id="tlf" placeholder="33232443" />
-    </div>
-    <div>
-      <input type="checkbox" name="nyhedsbrev" id="brev" />
-      <label for="brev">Ja tak til nyhedsbreve og tilbud</label>
-    </div>
-    <div></div>
-  </form> -->
   <article>
     <h1 class="text-3xl font-bold text-center text-green-900">
       Hvor meget Digitalt skrald har du smidt ud?
     </h1>
     <form
-      class="baggrund text-white p-6 rounded-lg max-w-md mx-auto mt-6 space-y-4"
+      class="baggrund text-amber-50 p-6 rounded-lg max-w-md mx-auto mt-6 space-y-4"
     >
       <div>
         <span class="text-lg font-semibold">Omregner:</span>
         <div class="flex items-center gap-2 mt-2">
           <select
-            class="baggrund border-3 rounded p-2 border-amber-200 text-white appearance-none pr-6"
+            class="baggrund border-3 rounded p-2 border-amber-200 text-amber-50 appearance-none pr-6"
           >
             <option>Type skrald</option>
             <option>Gamle mails</option>
@@ -78,7 +29,7 @@ import thumbsup from "../assets/images/thumbsup.png";
           <span>=</span>
           <input
             type="text"
-            class="border-3 rounded p-2 baggrund border-amber-200 text-white w-16 text-center"
+            class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-16 text-center"
             placeholder="GB"
           />
         </div>
@@ -89,12 +40,12 @@ import thumbsup from "../assets/images/thumbsup.png";
         <div class="flex gap-2 mt-2">
           <input
             type="text"
-            class="border-3 rounded p-2 baggrund border-amber-200 text-white w-1/2"
+            class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-1/2"
             placeholder="Fornavn"
           />
           <input
             type="text"
-            class="border-3 rounded p-2 baggrund border-amber-200 text-white w-1/2"
+            class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-1/2"
             placeholder="Efternavn"
           />
         </div>
@@ -103,7 +54,7 @@ import thumbsup from "../assets/images/thumbsup.png";
       <div>
         <input
           type="email"
-          class="border-3 rounded p-2 baggrund border-amber-200 text-white w-full"
+          class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-full"
           placeholder="Email"
         />
       </div>
@@ -111,7 +62,7 @@ import thumbsup from "../assets/images/thumbsup.png";
       <div>
         <input
           type="text"
-          class="border-3 rounded p-2 baggrund border-amber-200 text-white w-full"
+          class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-full"
           placeholder="Land"
         />
       </div>
@@ -120,7 +71,7 @@ import thumbsup from "../assets/images/thumbsup.png";
         <label class="block text-sm">Deltagere:</label>
         <input
           type="number"
-          class="border-3 rounded p-2 baggrund border-amber-200 text-white w-full"
+          class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-full"
           value="1"
         />
       </div>
@@ -129,7 +80,7 @@ import thumbsup from "../assets/images/thumbsup.png";
         <label class="block text-sm">Mængde GB slettet:</label>
         <input
           type="number"
-          class="border-3 rounded p-2 baggrund border-amber-200 text-white w-full"
+          class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-full"
           value="0"
         />
       </div>
@@ -149,7 +100,7 @@ import thumbsup from "../assets/images/thumbsup.png";
       <!-- Registrer knap -->
       <div class="text-center">
         <button
-          class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+          class="bg-green-600 hover:bg-green-700 text-amber-50 font-bold py-2 px-4 rounded"
         >
           Registrer bidrag
         </button>
