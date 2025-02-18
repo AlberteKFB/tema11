@@ -7,12 +7,18 @@ import thumbsup from "../assets/images/thumbsup.png";
 ---
 
 <MainLayout title="Titel">
-  <h1>Index overskrift</h1>
-  <Button>Klik!</Button>
-  <p>
-    Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link
-    >
-  </p>
-  <a href="/forms">forms</a>
-  <Image src={thumbsup} alt="" />
+	<div class="grid grid-cols-2">
+		<div class="">
+			<h1 class="font-bold text-[#183D2E] text-8xl pt-16">Digital Oprydnings Dag</h1>
+			<h3 class="font-thin text-[#183D2E] text-[41px] pb-8">D. 15 marts</h3>
+		</div>
+		<div class="">
+			<img src="logodcd.svg" alt="">
+		</div>
+	</div>
+
+	<div class="flex gap-8">
+		<Button class="">Del med en ven <img src="users.svg" alt="ven icon"></Button>
+		<Button class="">Sæt i min kalender <img src="kalendar.svg" alt="kalendar icon"></Button>
+	</div>
 </MainLayout>
