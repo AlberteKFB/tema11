@@ -34,9 +34,35 @@ import thumbsup from "../assets/images/thumbsup.png";
 			<img class="w-full" src="shrug.svg" alt="shrug">
 		</div>
 		<div>
-			<h2><span class="font-thin text-[64px]">Hvad er <br></span> <span class="font-extrabold text-[64px] pb-8">Digital Oprydnings Dag?</span></h2>
-			<p class="text-[24px] pt-4 font-regular">Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day.  </p>
-			<p class="text-[24px] py-8 font-regular">Nu i sit femte år og organiseret af Let's Do It World har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre både enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online tilstedeværelse.</p>
+			<h2><span class="font-thin text-[64px] text-[#183D2E]">Hvad er <br></span> <span class="font-extrabold text-[64px] pb-8 text-[#183D2E]">Digital Oprydnings Dag?</span></h2>
+			<p class="text-[24px] pt-4 font-regular text-[#183D2E]">Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day.  </p>
+			<p class="text-[24px] py-8 font-regular text-[#183D2E]">Nu i sit femte år og organiseret af Let's Do It World har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre både enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online tilstedeværelse.</p>
+		</div>
+	</div>
+
+	<div class="flex justify-center pt-24 pb-8">
+		<h2><span class="font-thin text-[64px] text-[#183D2E]">Hvad er </span> <span class="font-extrabold text-[64px] pb-8 text-[#183D2E]">Digital Skrald?</span></h2>
+	</div>
+
+	<div class="p-16 grid grid-cols-3 gap-16">
+		<div class="flex flex-col flex-wrap items-center cardanimation1">
+			<h4 class="py-8 font-bold text-[32px] text-[#183D2E]">Gamle Mails</h4>
+			<p class="pb-8 font-regular text-[24px] text-[#183D2E]">Lorem ipsum dolor sit amet consectetur. Diam nisi viverra lectus scelerisque elit ac volutpat sed. Tortor lobortis vitae tincidunt sit. Cras cursus ac vel bibendum mi. Quis hendrerit dolor mattis amet scelerisque at.</p>
+			<img src="gamlemails.svg" alt="gamle mais">
+		</div>
+		<div>
+			<div class="flex flex-col flex-wrap items-center cardanimation2">
+				<h4 class="py-8 font-bold text-[32px] text-[#183D2E]">Billeder</h4>
+				<p class="pb-8 font-regular text-[24px] text-[#183D2E]">Lorem ipsum dolor sit amet consectetur. Diam nisi viverra lectus scelerisque elit ac volutpat sed. Tortor lobortis vitae tincidunt sit. Cras cursus ac vel bibendum mi. Quis hendrerit dolor mattis amet scelerisque at.</p>
+				<img src="billeder.svg" alt="billeder">
+			</div>
+		</div>
+		<div>
+			<div class="flex flex-col flex-wrap items-center cardanimation3">
+				<h4 class="py-8 font-bold text-[32px] text-[#183D2E]">Dokumenter i Skyen</h4>
+				<p class="pb-8 font-regular text-[24px] text-[#183D2E]">Lorem ipsum dolor sit amet consectetur. Diam nisi viverra lectus scelerisque elit ac volutpat sed. Tortor lobortis vitae tincidunt sit. Cras cursus ac vel bibendum mi. Quis hendrerit dolor mattis amet scelerisque at.</p>
+				<img src="cloud.svg" alt="cloud">
+			</div>
 		</div>
 	</div>
 </MainLayout>
@@ -76,6 +102,30 @@ import thumbsup from "../assets/images/thumbsup.png";
 	inView(button2, () => {
 	
 	button2.classList.add("animate__animated", "animate__fadeInLeft", "animate__delay-0.7s");
+	
+	}); 
+
+	const cardanimation1 = document.querySelector(".cardanimation1");
+	
+	inView(cardanimation1, () => {
+	
+	cardanimation1.classList.add("animate__animated", "animate__fadeInUpBig", "animate__delay-0.5s");
+	
+	}); 
+
+	const cardanimation2 = document.querySelector(".cardanimation2");
+	
+	inView(cardanimation2, () => {
+	
+	cardanimation2.classList.add("animate__animated", "animate__fadeInUpBig", "animate__delay-1s");
+	
+	}); 
+
+	const cardanimation3 = document.querySelector(".cardanimation3");
+	
+	inView(cardanimation3, () => {
+	
+	cardanimation3.classList.add("animate__animated", "animate__fadeInUpBig", "animate__delay-2s");
 	
 	}); 
 	</script>
