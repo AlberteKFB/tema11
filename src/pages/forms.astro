@@ -6,9 +6,17 @@ import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 
+<!-- ---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import thumbsup from "../assets/images/thumbsup.png";
+---
+
 <MainLayout title="Titel">
   <article>
-    <h1 class="text-5xl font-bold text-center text-green-900 max-w-2xl mx-auto">
+    <h1 class="text-5xl font-bold text-center text-[#183d2e] max-w-2xl mx-auto">
       Hvor meget Digitalt skrald har du smidt ud?
     </h1>
     <form
@@ -26,6 +34,12 @@ import thumbsup from "../assets/images/thumbsup.png";
             <option>Billeder</option>
             <option>Videoer</option>
           </select>
+          <label class="block text-sm">Antal:</label>
+          <input
+            type="number"
+            class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-full"
+            value="1"
+          />
           <span>=</span>
           <input
             type="text"
@@ -97,13 +111,117 @@ import thumbsup from "../assets/images/thumbsup.png";
         <label>Tilmeld mig nyhedsbreve fra World Cleanup Day</label>
       </div>
 
-      <!-- Registrer knap -->
       <div class="text-center mt-8">
         <a
           href="/forms"
-          class="p-4 text-2xl font-bold text-white border-solid rounded-[20px] bg-[#6AA28B]"
+          class="p-2 text-2xl font-bold text-white border-solid border-2 border-[#6AA28B] rounded-[20px] bg-[#6AA28B] hover:text-[#6AA28B] hover:bg-[#183d2e] hover:border-2 duration-500"
           >Registrer bidrag</a
         >
+      </div>
+    </form>
+  </article>
+</MainLayout> -->
+<MainLayout title="Titel">
+  <article class="px-4">
+    <h1
+      class="text-3xl md:text-5xl font-bold text-center text-[#183d2e] max-w-2xl mx-auto"
+    >
+      Hvor meget Digitalt skrald har du smidt ud?
+    </h1>
+    <form
+      class="baggrund text-amber-50 p-4 md:p-6 rounded-lg max-w-md mx-auto mt-4 md:mt-6 space-y-3 md:space-y-4"
+    >
+      <div>
+        <span class="text-lg font-semibold">Omregner:</span>
+        <div class="flex items-center gap-2 mt-2">
+          <select
+            class="baggrund border-3 rounded p-2 border-amber-200 text-amber-50 w-full"
+          >
+            <option>Type skrald</option>
+            <option>Gamle mails</option>
+            <option>Dokumenter</option>
+            <option>Billeder</option>
+            <option>Videoer</option>
+          </select>
+          <label class="block text-sm">Antal:</label>
+          <input
+            type="number"
+            class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-20"
+            value="1"
+          />
+          <span>=</span>
+          <input
+            type="text"
+            class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-16 text-center"
+            placeholder="GB"
+          />
+        </div>
+      </div>
+
+      <div>
+        <span class="text-lg font-semibold">Dine informationer:</span>
+        <div class="flex gap-2 mt-2">
+          <input
+            type="text"
+            class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-full md:w-1/2"
+            placeholder="Fornavn"
+          />
+          <input
+            type="text"
+            class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-full md:w-1/2"
+            placeholder="Efternavn"
+          />
+        </div>
+      </div>
+
+      <input
+        type="email"
+        class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-full"
+        placeholder="Email"
+      />
+      <input
+        type="text"
+        class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-full"
+        placeholder="Land"
+      />
+
+      <div>
+        <label class="block text-sm">Deltagere:</label>
+        <input
+          type="number"
+          class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-full"
+          value="1"
+        />
+      </div>
+
+      <div>
+        <label class="block text-sm">Mængde GB slettet:</label>
+        <input
+          type="number"
+          class="border-3 rounded p-2 baggrund border-amber-200 text-amber-50 w-full"
+          value="0"
+        />
+      </div>
+
+      <div class="flex items-start gap-2">
+        <input type="checkbox" class="w-5 h-5 mt-1" />
+        <label
+          >Jeg erklærer mig enig i Let's Do it, World Terms and Conditions.</label
+        >
+      </div>
+
+      <div class="flex items-start gap-2">
+        <input type="checkbox" class="w-5 h-5 mt-1" />
+        <label>Tilmeld mig nyhedsbreve fra World Cleanup Day</label>
+      </div>
+
+      <div class="text-center mt-6">
+        <a
+          href="/forms"
+          class="p-2 text-xl font-bold text-amber-50 border-solid border-2 border-[#6AA28B] rounded-[20px] bg-[#6AA28B] hover:text-[#6AA28B] hover:bg-[#183d2e] hover:border-2 duration-500"
+        >
+          Registrer bidrag
+        </a>
       </div>
     </form>
   </article>
