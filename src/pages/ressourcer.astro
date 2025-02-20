@@ -1,0 +1,33 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import thumbsup from "../assets/images/thumbsup.png";
+import ressourcer_image from "../assets/images/ressourcer_image.webp";
+---
+
+<MainLayout>
+  <main class="max-w-5xl mx-auto p-6">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+      <img src={ressourcer_image.src} alt="ressourcer" class="" />
+      <div>
+        <h1 class="text-4xl font-bold text-green-900 mb-4">Ressourcer og materialer</h1>
+        <ul class="space-y-2 text-green-900 list-disc list-inside">
+          <li><Link href="#">Retningslinjer for enkeltpersoner</Link></li>
+          <li><Link href="#">Retningslinjer for virksomheder</Link></li>
+          <li><Link href="#">Retningslinjer for skoler</Link></li>
+          <li><Link href="#">Retningslinjer for kommuner</Link></li>
+          <li><Link href="#">Sådan rydder du op på din computer og Drive</Link></li>
+          <li><Link href="#">Sådan rydder du op i dine e-mails</Link></li>
+          <li><Link href="#">Sådan rydder du op på din smartphone og tablet</Link></li>
+          <li><Link href="#">Indsamling af deltagerdata 1</Link></li>
+          <li><Link href="#">Indsamling af deltagerdata 2</Link></li>
+          <li><Link href="#">Markedsføringsmaterialer</Link></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</MainLayout>
+
+
+

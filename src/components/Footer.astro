@@ -1,6 +1,25 @@
 ---
+import Link from "../components/Link.astro";
 ---
-<div>
-<p>Footer - tilføj footerindhold</p>
-</div>
-  
+
+<footer class="bg-[#183D2E] text-white py-20 px-6">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+    <div class="md:col-span-3">
+      <p class="text-6xl md:text-8xl font-bold leading-tight">
+        Digital Oprydnings <br> Dag
+      </p>
+    </div>
+    <div class="text-sm md:col-span-1">
+      <p>Digital Oprydnings Dag</p>
+    </div>
+    <div class="text-sm">
+      <p>Følg os</p>
+      <ul>
+        <li><Link href="#">Instagram</Link></li>
+        <li><Link href="#">Facebook</Link></li>
+        <li><Link href="#">LinkedIn</Link></li>
+      </ul>
+    </div>
+    <div class="text-sm">
+      <p><Link href="#">Kontakt os</Link></p>
+    </div>
